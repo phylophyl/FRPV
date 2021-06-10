@@ -1,4 +1,4 @@
-@import "/css/reset.css";
+@import "../css/reset.css";
 @import url('https://css.gg/chevron-double-right-o.css');
 
 Html,
@@ -86,7 +86,7 @@ main {
 
 .intro-main {
   background-color: #e7e6e9;
-  background-image: url("/images/solar2.jpg");
+  background-image: url("../images/solar2.jpg");
   background-repeat: no-repeat;
   background-size: auto auto;
   object-fit: cover;
