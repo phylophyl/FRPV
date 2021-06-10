@@ -1,0 +1,153 @@
+@import "/css/reset.css";
+@import url('https://css.gg/chevron-double-right-o.css');
+
+Html,
+h1,
+h2 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+body,
+header,
+nav,
+.barre,
+.intro .tiroir,
+.header_top,
+main,
+.service {
+  display: flex;
+}
+
+body {
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+header {
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 50px 0 50px;
+  /* max-width: 1140px; */
+  width: 100%;
+}
+
+.logo {
+  font-family: "Teko", sans-serif;
+  color: #20303d;
+  font-size: 33px;
+  width: 100%;
+}
+
+nav {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #8c9cab;
+  padding: 12px 0;
+}
+
+.hover:hover > a {
+  color: #20303d;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.barre {
+  flex-grow: 1;
+  height: 0.9px;
+  background-color: LightGray;
+}
+
+main {
+  margin: 0 50px 25px 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #e7e6e9;
+}
+
+.intro {
+  width: 45%;
+  min-width: 250px;
+  height: 300px;
+  background-color: white;
+  padding: 5%;
+  margin: 30px 0 30px 0;
+  border: 1px white solid;
+}
+
+
+
+.intro:hover {
+  cursor: pointer;
+  border:  1px #8c9cab solid;
+  transition: border 0.5s;
+}
+
+.intro-main {
+  background-color: #e7e6e9;
+  background-image: url("/images/solar2.jpg");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  object-fit: cover;
+  opacity: 0.7;
+  
+}
+
+.intro-titre {
+  width: 90%;
+  line-height: 2.5;
+}
+
+span {
+  background: rgba(255,255,255, 1);
+  padding: 20px 10px;
+  font-weight: 700;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.service {
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+
+
+.text {
+  margin-top: 20px;
+}
+
+.bouton {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 85%%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  main {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  header {
+    padding: 0 10px 0 10px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  nav {
+    justify-content: center;
+  }
+  .menu {
+    margin: 15px 15px;
+  }
+}
