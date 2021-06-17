@@ -128,11 +128,11 @@ footer {
 
 .intro-main {
   background-color: #e7e6e9;
-  background-image: url("../images/solar2.jpg");
+  background-image: url("../images/solar.jpg");
   background-repeat: no-repeat;
   background-size: auto auto;
   object-fit: cover;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .intro-titre {
