@@ -21,7 +21,6 @@ main,
 
 body {
   flex-direction: column;
-
   justify-content: space-between;
 }
 
@@ -43,6 +42,10 @@ header {
   
 }
 
+nav > a:link, nav > a:visited {
+  color: black;
+}
+
 nav {
   flex-grow: 1;
   flex-wrap: wrap;
@@ -51,8 +54,17 @@ nav {
   padding: 12px 0;
 }
 
+.menu-page {
+  border-bottom: 5px #4285f4 solid;
+}
+
+.menu-logo {
+  text-decoration: underline;
+}
+
+
 .hover:hover > a {
-  color: #20303d;
+  color: #4285f4;
   cursor: pointer;
   transition: color 0.5s;
 }
@@ -63,29 +75,49 @@ nav {
   background-color: LightGray;
 }
 
-main {
-  justify-content: space-around;
-}
-
 main, footer {
   margin: 0 50px 25px 50px;
   flex-wrap: wrap;
   background-color: #e7e6e9;
 }
 
+main {
+  justify-content: space-around;
+  max-width: 1400px;
+}
+
+
+
 footer {
   justify-content: space-around;
   padding: 50px;
 }
 
+.main_conteneur {
+  max-width: 1200px;
+}
+
 .intro {
-  /* width: 45%; */
+  width: 45%;
   min-width: 250px;
   height: 300px;
-  background-color: white;
-  padding: 5%;
+  /* padding: 5%; */
   margin: 30px 10px 30px 10px;
-  border: 1px white solid;
+}
+
+.bleu {
+  background-color: #518fdb;
+  border: 1px #518fdb solid;
+}
+
+.jaune {
+  background-color: #fcd362;
+  border: 1px #fcd362 solid;
+}
+
+.rouge {
+  background-color:#fb525c;
+  border: 1px #fb525c solid;
 }
 
 .intro:hover {
@@ -106,6 +138,10 @@ footer {
 .intro-titre {
   width: 90%;
   line-height: 2.5;
+}
+
+.carte-padding {
+  padding: 7%;
 }
 
 span {
@@ -149,10 +185,34 @@ footer ul {
   margin: 10px;
 }
 
+.jumbo {
+  margin: 5% 13%;
+  padding: 5%;
+  background-color: #4285f4;
+}
+
+.page_contenu {
+  margin: 5% 17%;
+}
+
+@media screen and (min-width: 1548px) {
+  main {
+    width: 70%;
+    margin: auto;
+  }
+  .intro {
+    width: 45%;
+  }
+}
 
 @media screen and (max-width: 960px) {
   main, footer {
     margin: 0;
+  }
+
+  footer {
+    margin-top: 20px;
+    flex-direction: column;
   }
 
   footer {
