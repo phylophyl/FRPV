@@ -42,6 +42,12 @@ header {
   
 }
 
+.fa-plus-square {
+font-size: 1.5rem;
+border: 2px black solid;
+border-radius: 50%;
+}
+
 nav > a:link, nav > a:visited {
   color: black;
 }
@@ -58,15 +64,15 @@ nav {
   border-bottom: 5px #4285f4 solid;
 }
 
-.menu-logo {
+/* .menu-logo {
   text-decoration: underline;
-}
+} */
 
 
 .hover:hover > a {
   color: #4285f4;
   cursor: pointer;
-  transition: color 0.5s;
+  transition: color 0.3s;
 }
 
 .barre {
@@ -106,17 +112,17 @@ footer {
 }
 
 .bleu {
-  background-color: #518fdb;
+  background-color: #4c9fd3;
   border: 1px #518fdb solid;
 }
 
 .jaune {
-  background-color: #fcd362;
+  background-color: #d3ec90;
   border: 1px #fcd362 solid;
 }
 
 .rouge {
-  background-color:#fb525c;
+  background-color:#d05dc0;
   border: 1px #fb525c solid;
 }
 
@@ -128,7 +134,7 @@ footer {
 
 .intro-main {
   background-color: #e7e6e9;
-  background-image: url("../images/solar.jpg");
+  background-image: url("../images/Capture\ d’écran\ du\ 2021-06-17\ 09-45-41.png");
   background-repeat: no-repeat;
   background-size: auto auto;
   object-fit: cover;
@@ -144,7 +150,7 @@ footer {
   padding: 7%;
 }
 
-span {
+.span-carte {
   background: rgba(255,255,255, 1);
   padding: 20px 10px;
   font-weight: 700;
